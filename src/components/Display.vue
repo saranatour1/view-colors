@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import CopyColor from './CopyColor.vue';
-const props = defineProps<{ colors: string[] }>();
+defineProps<{ colors: string[] }>();
 </script>
 
 <template>

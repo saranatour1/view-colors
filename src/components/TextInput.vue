@@ -4,7 +4,7 @@ import { useColorsStore } from "../stores/store"
 
 const store = useColorsStore();
 const text = ref<string>('');
-watch(text, async (newQuestion, oldQuestion) => {
+watch(text, async (newQuestion) => {
   try {
     store.findMatches(newQuestion)
   } catch (e) {

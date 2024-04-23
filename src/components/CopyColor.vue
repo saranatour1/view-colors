@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
-const props = defineProps<{ color: string }>()
+defineProps<{ color: string }>()
 
-const { text, copy, copied, isSupported } = useClipboard();
+const { copy, copied } = useClipboard();
 </script>
 
 <template>
